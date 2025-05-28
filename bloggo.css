@@ -1,0 +1,228 @@
+body {
+  background-color: black;
+  background-image: url("images/bloggo/starback.gif");
+  background-repeat: repeat;
+  background-position: right top;
+  background-attachment: fixed;
+  color: White;
+  font-family: "Comic Sans MS", cursive, sans-serif;}
+  
+  
+  /*link Styling*/
+a:link {
+  color: white;
+  text-decoration: underline;
+}
+
+
+a:visited {
+  color: white;
+  text-decoration: underline;
+}
+
+
+a:hover {
+  color: grey;
+  text-decoration: underline;
+}
+
+
+
+/* fun color changing font lmao */
+.colorchange {
+  animation: color-change 1s infinite;
+}
+
+@keyframes color-change {
+  
+  0% { color: #2dfa1e; }
+  50% { color: #1efaef; }
+  100% { color: #2dfa1e; }
+}
+
+
+
+.sidebarframe {
+  position: fixed;}
+
+
+
+
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 250px; /* width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #310038; 
+  background-image: url("sidebar.html");
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 40px;
+  color: #7abcb0;
+  padding: 6px 6px 6px 6px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 6px 6px 6px;
+  text-decoration: none;
+ 
+  color: #fff;
+  
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+  
+}
+
+/* Style page content */
+.main {
+  margin-left: 255px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 10px;}
+}
+
+
+
+
+
+
+
+
+/* Textboxes */
+.textboxA {
+  margin: 50px;
+  background-color: #310038;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  opacity: 1.0;
+  width: 600px;
+}
+
+.textboxA p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+
+
+.textboxB {
+  margin: 50px;
+  background-color: #050038;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  opacity: 1.0;
+  width: 600px;
+}
+
+.textboxB p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+
+
+.date {border-style: outset;}  
+
+  table, th, td {
+  border: 1px solid white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* set the body to flex, and allow the elements to wrap
+   https://www.w3schools.com/css/css3_flexbox.asp                 */
+body {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* media query to change the layout at screen sizes under 910px.
+   i chose 910px because it was a little over the point where the
+   the horizontal scroll bar appears.
+   https://www.w3schools.com/css/css_rwd_mediaqueries.asp         */
+@media only screen and (max-width: 910px) {
+  /* remove the margin on the body so the nav background is     
+     is full width                                                */
+  body {
+    margin: 0;
+  }
+  /* set both the sidenav and main divs to full width             */
+  .sidenav, .main {
+    width: 100%;
+  }
+  /* set the order of the divs. you can swap these numbers around
+     if you wish.
+     https://www.w3schools.com/cssref/css3_pr_order.asp
+     remove the left margin that made room for the sidenav on 
+     desktop                                                      */
+  .main {
+    order: 1;
+    margin-left: 0;
+  }
+  /* make the side nav auto height and change it's position from
+     fixed to relative
+     https://www.w3schools.com/css/css_positioning.asp
+     reenabled auto horizontal scrolling in the rare case the user's
+     phone is super old.                                          */
+  .sidenav {
+    order: 2;
+    height: auto;
+    position: relative;
+    overflow-x: auto;
+  }
+  /* for every element inside .main, apply a 10px margin
+     vertically to space the elements out and apply an auto margin 
+     horizontally to center them.
+    https://www.w3schools.com/css/css_margin.asp                  */
+  .main > * {
+    margin: 10px auto;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

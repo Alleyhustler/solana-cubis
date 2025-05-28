@@ -1,0 +1,130 @@
+body {
+  background-color: white;
+  background-image: url("cocoback.jpg");
+  ;background-repeat: repeat;
+  background-position: left top;
+  background-attachment: fixed;
+  color: black;
+  font-family: 'Waterlily', sans-serif;
+  font-size: 30px;}
+/* Style the header */
+.header {
+  text-align: center;
+  font-size: 55px;
+  font-family: 'Waterlily', sans-serif;
+}
+
+
+
+
+
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 600px;
+  background-color: #fce9f1;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #fce9f1 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+
+
+
+
+
+
+.border1 {padding-left:30px;
+          padding-right:30px;
+          border-style: dotted;
+          border-width: 5px;
+          border-color: #00d1ff;
+          width:500px;
+          float:left;
+          }
+
+
+
+.border2 {padding-left:30px;
+          padding-right:30px;
+          border-style: dotted;
+          border-width: 5px;
+          border-color: #00d1ff;
+          width:500px;
+          float:right;
+          }
+
+
+.border3 {padding-left:30px;
+          padding-right:30px;
+          border-style: dotted;
+          border-width: 5px;
+          border-color: #00d1ff;
+          width:500px;
+          float:center;
+          }
+
+
+
+
+
+
+
+.backk {background-color:#fff;
+          opacity:0.6;}
+
+
+.line {
+  border-top: 5px dotted #00d1ff;
+}
+
+
+
+
+
+
+
+

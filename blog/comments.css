@@ -1,0 +1,9 @@
+body {
+  background-color: white;
+  background-image: url("");
+  ;background-repeat: repeat;
+  background-position: right top;
+  background-attachment: fixed;
+  color: black;
+  font-family: "Snowburst One", system-ui;
+

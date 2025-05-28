@@ -1,0 +1,240 @@
+body {
+  background-color: #4c7080;
+  background-image: url("pawpoint/acback.jpg");
+  ;background-repeat: repeat;
+  background-position: right top;
+  background-attachment: fixed;
+  color: white;
+  font-family: "Snowburst One", system-ui;
+
+
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+}
+
+
+/*link Styling*/
+a:link {
+  color: #4f6d87;
+  text-decoration: underline;
+}
+
+
+a:visited {
+  color: black;
+  text-decoration: underline;
+}
+
+
+a:hover {
+  color: #689eb1;
+  text-decoration: underline;
+}
+
+
+
+
+/* fun color changing font lmao */
+.colorchange {
+  animation: color-change 1s infinite;
+}
+
+@keyframes color-change {
+  0% { color: #aabbe2; }
+  50% { color: #689eb1; }
+  
+  100% { color: #aabbe2; }
+}
+
+
+
+
+
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 250px; /* width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #1b2d61; 
+  background-image: url("sidebar.html");
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 40px;
+  color: #7abcb0;
+  padding: 6px 6px 6px 6px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 6px 6px 6px;
+  text-decoration: none;
+ 
+  color: #fff;
+  
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+  
+}
+
+/* Style page content */
+.main {
+  margin-left: 250px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 10px;}
+}
+
+
+
+/* Textboxes */
+.textboxA {
+  margin: 50px;
+  background-color: #102a5b;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  opacity: 1.0;
+  width: 400px;
+}
+
+.textboxA p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+
+
+.textboxB {
+  margin: 50px;
+  background-color: #0c2533;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  opacity: 1.0;
+  width: 400px;
+}
+
+.textboxB p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+
+
+
+
+
+.sidephotos {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 400px; /* width of the sidebar */
+  
+  z-index: 1; /* Stay on top */
+  top: 0; 
+  margin-left:  900px;
+  background-color: #0c2533; 
+  
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 10px;
+  color: #7abcb0;
+  padding: 6px 6px 6px 6px;
+}
+
+
+
+
+
+
+
+.gallery {
+  margin: 5px;
+  
+  float: left;
+  width: 180px;
+}
+
+.gallery:hover {
+  
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.desc {
+  padding: 15px;
+  text-align: center;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* set the body to flex, and allow the elements to wrap
+   https://www.w3schools.com/css/css3_flexbox.asp                 */
+body {
+  display: flex;
+  flex-wrap: wrap;
+}
+/* media query to change the layout at screen sizes under 910px.
+   i chose 910px because it was a little over the point where the
+   the horizontal scroll bar appears.
+   https://www.w3schools.com/css/css_rwd_mediaqueries.asp         */
+@media only screen and (max-width: 910px) {
+  /* remove the margin on the body so the nav background is     
+     is full width                                                */
+  body {
+    margin: 0;
+  }
+  /* set both the sidenav and main divs to full width             */
+  .sidenav, .main {
+    width: 100%;
+  }
+  /* set the order of the divs. you can swap these numbers around
+     if you wish.
+     https://www.w3schools.com/cssref/css3_pr_order.asp
+     remove the left margin that made room for the sidenav on 
+     desktop                                                      */
+  .main {
+    order: 1;
+    margin-left: 0;
+  }
+  /* make the side nav auto height and change it's position from
+     fixed to relative
+     https://www.w3schools.com/css/css_positioning.asp
+     reenabled auto horizontal scrolling in the rare case the user's
+     phone is super old.                                          */
+  .sidenav {
+    order: 2;
+    height: auto;
+    position: relative;
+    overflow-x: auto;
+  }
+  /* for every element inside .main, apply a 10px margin
+     vertically to space the elements out and apply an auto margin 
+     horizontally to center them.
+    https://www.w3schools.com/css/css_margin.asp                  */
+  .main > * {
+    margin: 10px auto;
+  }
+}

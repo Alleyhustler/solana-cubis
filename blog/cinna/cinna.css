@@ -1,0 +1,51 @@
+
+body {
+  background-color: white;
+  background-image: url("back.gif");
+  ;background-repeat: repeat;
+  background-position: left top;
+  background-attachment: fixed;
+  color: black;
+  font-family: 'Pineapples', sans-serif;
+  font-size: 30px;}
+/* Style the header */
+.header {
+  text-align: center;
+  font-size: 35px;
+  font-family: 'Pineapples', sans-serif;
+}
+
+
+
+
+
+
+
+.border1 {padding-left:30px;
+          padding-right:30px;
+          border-style: dotted;
+          border-width: 5px;
+          border-color: #61c1d4;
+          width:500px;
+          }
+ 
+ 
+.border2 {padding-left:30px;
+          padding-right:30px;
+          border-style: dotted;
+          border-width: 5px;
+          border-color: #61c1d4;
+          width:500px;
+          float:right
+          }
+ 
+ 
+ 
+
+.backk {background-color:#fff;
+          opacity:0.6;}
+
+
+.gallery {
+  border-top: 5px dotted #61c1d4;
+}
